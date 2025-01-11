@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'frontend-visa' title`, () => {
+  it(`should have the 'angular-frontend-visa' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('frontend-visa');
+    expect(app.title).toEqual('angular-frontend-visa');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, frontend-visa');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, angular-frontend-visa');
   });
 });

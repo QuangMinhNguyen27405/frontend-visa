@@ -1,0 +1,78 @@
+#footer {
+    max-width: 80%;
+}
+
+footer {  
+    color: white;  
+    padding: 2rem 0;  
+}  
+
+footer h5 {  
+    color: rgb(203, 168, 118);  
+    font-size: 1.2rem;  
+    margin-bottom: 1rem;  
+}  
+
+footer a {  
+    color: white;  
+    text-decoration: none;  
+    font-size: 0.95rem;  
+    transition: color 0.3s ease;  
+}  
+
+footer a:hover {  
+    color: rgb(203, 168, 118);  
+}  
+
+footer p {  
+    color: rgb(255, 255, 255);  
+    font-size: 0.9rem;  
+}  
+
+.nav-link {
+    padding: 0.5rem 0;
+}
+
+form .form-control {  
+    border: none;  
+    border-radius: 0;  
+    border-bottom: 2px solid rgb(203, 168, 118);  
+    background-color: transparent;  
+    color: white;  
+    margin-bottom: 1rem;  
+}  
+
+form .btn {  
+    background-color: rgb(203, 168, 118);  
+    color: white;  
+    border: none;  
+    padding: 0.5rem 1.5rem;  
+    transition: background-color 0.3s ease;  
+}  
+
+form .btn:hover {  
+    background-color: rgb(180, 140, 100);  
+}  
+
+.social-icons a {  
+    display: inline-block;  
+    color: white;  
+    font-size: 1.2rem;  
+    margin-right: 1rem;  
+    transition: color 0.3s ease;  
+}  
+
+.social-icons a:hover {  
+    color: rgb(203, 168, 118);  
+}  
+
+@media (max-width: 1040px) {
+    #footer {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    #footer {
+        max-width: 90%;
+    }
+}

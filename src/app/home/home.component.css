@@ -1,0 +1,174 @@
+.carousel-inner img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    max-height: 100vh; 
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Add background for better visibility */
+}
+
+/* Who Are We Section */
+#home .container .row {
+    margin-top: 50px;
+}
+
+#home h2 {
+    text-align: center;
+}
+
+#home h1,
+#home h2,
+#home h3,
+#home h4,
+#home h5 {
+    color: rgb(102, 41, 41);
+}
+
+#home p {
+    color: rgb(102, 41, 41);
+}
+
+#home img.img-fluid {
+    max-width: 90%; /* Ensure padding around the image */
+    border: 2px solid rgb(102, 41, 41);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline Section */
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Timeline Line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: rgb(203, 168, 118);
+    transform: translateX(-50%);
+}
+
+/* Timeline Items */
+.timeline li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline li:nth-child(odd) .timeline-date,
+.timeline li:nth-child(odd) .timeline-content {
+    text-align: right;
+}
+
+.timeline li:nth-child(even) .timeline-date,
+.timeline li:nth-child(even) .timeline-content {
+    text-align: left;
+}
+
+/* Timeline Date Styling */
+.timeline-date {
+    background: rgb(102, 41, 41);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin-right: 0.5rem;
+    border-radius: 50px;
+    max-width: 120px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Timeline Content Styling */
+.timeline-content {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    position: relative;
+}
+
+.timeline-content h3 {
+    font-size: 1.25rem;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Connectors */
+.timeline li .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 20px;
+    height: 4px;
+    background-color: rgb(102, 41, 41);
+    transform: translateY(-50%);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Carousel */
+    .carousel-inner img {
+        height: 250px;
+    }
+
+    /* Who Are We Section */
+    #home .row {
+        flex-direction: column;
+    }
+
+    #home img.img-fluid {
+        margin-bottom: 20px;
+    }
+
+    #who-are-we p {
+        text-align: center;
+    }
+
+    /* Timeline */
+    .timeline::before {
+        left: 10px;
+        width: 2px;
+    }
+
+    .timeline li {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    .timeline-date {
+        margin-bottom: 5px;
+    }
+
+    .timeline li:nth-child(odd) .timeline-date,
+    .timeline li:nth-child(even) .timeline-date {
+        text-align: left;
+    }
+
+    .timeline li:nth-child(odd) .timeline-content,
+    .timeline li:nth-child(even) .timeline-content {
+        text-align: left;
+    }
+
+    .timeline li .timeline-content::before {
+        display: none; /* Hide connectors on smaller screens */
+    }
+}

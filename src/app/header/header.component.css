@@ -1,0 +1,72 @@
+/* Navbar styles */
+nav {
+    width: 100%;
+    z-index: 1030;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+/* Navbar content */
+.navbar-content {
+    padding: 0rem 0rem;
+}
+
+#logo {
+    margin-right: 1rem;
+    width: 40px;
+    height: 40px;
+}
+
+/* Nav links */
+.nav-link {
+    margin-left: 1rem;
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+color: rgb(203, 168, 118);
+}
+
+.nav-link.active {
+font-weight: bold;
+color: rgb(203, 168, 118);
+border-bottom: 2px solid rgb(203, 168, 118);
+}
+
+/* Navbar toggler */
+.navbar-toggler {
+border: 1px solid rgb(203, 168, 118);
+border-radius: 4px;
+background-color: transparent;
+}
+
+.navbar-toggler-icon {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgb(247,245,214)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+.navbar-content {
+    padding: 0.5rem 1rem;
+}
+
+.nav-link {
+    font-size: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    display: block;
+    padding: 0.5rem;
+}
+}
+
+@media screen and (max-width: 576px) {
+#logo {
+    width: 35px;
+    height: 35px;
+}
+
+}
+  

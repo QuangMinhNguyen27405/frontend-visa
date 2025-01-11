@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    box-sizing: border-box; 
+    position: sticky;
+    margin: 0; 
+    padding: 0;
+    background-color: rgb(102, 41, 41);  
+}
+
+.content {
+    color: #662929;
+    max-width: 80%;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #ffff;
+}
+
+@media (max-width: 1040px) {
+    .content {
+        max-width: 100%;
+    }
+}
