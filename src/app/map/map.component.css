@@ -1,9 +1,3 @@
-/* General Container Styling */
-.content {
-    background-color: #f8f9fa; /* Light background for the whole section */
-    min-height: 100vh;        /* Full-screen height for a clean app layout */
-}
-
 /* Map Styling */
 #map {
     min-height: 110vh;
