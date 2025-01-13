@@ -1,0 +1,48 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+            21.0279,
+            105.7942
+            ]
+        },
+        "properties": {
+            "state": "Hanoi",
+            "name": "Minh",
+            "population": 199518
+        }
+        },
+        {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+            -134.41974,
+            58.301935
+            ]
+        },
+        "properties": {
+            "state": "Alaska",
+            "name": "Juneau",
+            "population": 32094
+        }
+        },
+        {
+        "type": "Feature",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+            -112.073844,
+            33.448457
+            ]
+        },
+        "properties": {
+            "state": "Arizona",
+            "name": "Phoenix",
+            "population": 1626078
+        }
+    }]
+}

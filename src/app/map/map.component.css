@@ -1,3 +1,70 @@
+/* General Container Styling */
+.content {
+    background-color: #f8f9fa; /* Light background for the whole section */
+    min-height: 100vh;        /* Full-screen height for a clean app layout */
+}
+
+/* Map Styling */
 #map {
-    height: 70vh;
+    min-height: 110vh;
+    max-height: 130vh;
+}
+
+/* Student Info Card Styling */
+#student-info .card {
+    border-radius: 10px; /* Smooth corners */
+    overflow: hidden;    /* Ensure content doesn't spill out of the card */
+    background: #ffffff; /* White background for contrast */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 500px;    /* Restrict card width for better proportion */
+    margin: 0 auto;      /* Center-align the card on small screens */
+    min-height: 110vh;
+    max-height: 130vh;
+}
+
+.card-header {
+    background: linear-gradient(45deg, #782f40, #cfc493); /* Garnet and gold gradient */
+    font-weight: bold;    /* Emphasized header text */
+    font-size: 18px;      /* Slightly larger header text */
+    padding: 15px;        /* Add space around text */
+}
+
+/* Styling for the Avatar */
+#student-avatar {
+    max-width: 280px;         /* Set avatar width */
+    min-height: 180px;        /* Set avatar height */
+    border-radius: 50%;   /* Make the avatar circular */
+    object-fit: cover;    /* Ensure the image fits the circle without distortion */
+    display: block;       /* Center-align the avatar */
+    margin: 0 auto 15px;  /* Add space below the avatar */
+    border: 2px solid #cfc493; /* Gold border */
+}
+
+.card-body p {
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    font-size: 16px;                   /* Readable font size */
+    color: #5a5c69;                    /* Neutral dark gray for text */
+    margin-bottom: 10px;               /* Spacing between entries */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #map {
+        margin: auto;
+        max-width: 85%;
+        margin-bottom: 20px;
+    }
+
+    .student-card-info {
+        margin: 10px 0;
+    }
+
+    #student-info .card {
+        max-width: 85%;
+        min-height: 50vh;
+        max-height: 130vh;
+    }
+}
+
+@media (max-width: 576px) {
 }
