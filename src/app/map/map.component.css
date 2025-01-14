@@ -1,7 +1,6 @@
 /* Map Styling */
 #map {
-    min-height: 110vh;
-    max-height: 130vh;
+    min-height: 800px;
 }
 
 /* Student Info Card Styling */
@@ -10,10 +9,8 @@
     overflow: hidden;    /* Ensure content doesn't spill out of the card */
     background: #ffffff; /* White background for contrast */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 500px;    /* Restrict card width for better proportion */
     margin: 0 auto;      /* Center-align the card on small screens */
-    min-height: 110vh;
-    max-height: 130vh;
+    min-height: 800px;
 }
 
 .card-header {
@@ -30,18 +27,32 @@
     border-radius: 50%;   /* Make the avatar circular */
     object-fit: cover;    /* Ensure the image fits the circle without distortion */
     display: block;       /* Center-align the avatar */
-    margin: 0 auto 15px;  /* Add space below the avatar */
+    margin: 0 auto 0; 
     border: 2px solid #cfc493; /* Gold border */
+}
+
+#student-info-text {
+    margin-top: 30px;
+    margin-left: 7rem;
+}
+
+.card-body h5 {
+    font-size: 40px !important;
 }
 
 .card-body p {
     font-family: 'Roboto', sans-serif; /* Modern, clean font */
-    font-size: 16px;                   /* Readable font size */
+    font-size: 20px;                   /* Readable font size */
     color: #5a5c69;                    /* Neutral dark gray for text */
-    margin-bottom: 10px;               /* Spacing between entries */
+    margin-top: 20px;               /* Spacing between entries */
 }
 
 /* Responsive Design */
+@media (max-width: 1400px) {
+    #student-info-text {
+        margin-left: 3rem;
+    }
+}
 @media (max-width: 768px) {
     #map {
         margin: auto;
@@ -49,16 +60,27 @@
         margin-bottom: 20px;
     }
 
-    .student-card-info {
-        margin: 10px 0;
-    }
-
     #student-info .card {
         max-width: 85%;
         min-height: 50vh;
         max-height: 130vh;
     }
+
+    #student-avatar {
+        max-height: 150px;
+        margin-top: 45px;
+    }
+
+    #student-info-text {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 576px) {
+    #student-avatar {
+        margin: auto auto;
+    }
+    #student-info-text {
+        margin-left: 20px;
+    }
 }
