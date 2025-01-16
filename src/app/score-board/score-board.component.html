@@ -1,0 +1,11 @@
+<div class="container-fluid content">
+    <div class="px-auto py-3">
+        <div> {{ gameData }}</div>
+        @if (gameData) {
+            <h1>Game Data</h1>
+            <p>{{ gameData.Attributes }}</p>
+        } @else {
+            <p>Loading...</p>
+        }
+    </div>
+</div>
